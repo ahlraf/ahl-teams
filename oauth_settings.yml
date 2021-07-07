@@ -1,6 +1,6 @@
-app_id: "f4d41bf1-f912-404b-9d58-ac0ea6563bbd"
-app_secret: "D2-AG_-W_795zVWFlx5Xn5i7Ni.tw4h4-T"
-redirect: "http://localhost:8000/callback"
+app_id: "fe2ca352-fdb7-4ba0-ae5f-d0da2ecd7223"
+app_secret: ".j121i1T_R4.~aoUDf3O0o2C-AYp9~GU5R"
+redirect: "https://ahl-teams.herokuapp.com/callback"
 scopes:
   - user.read
   - mailboxsettings.read
