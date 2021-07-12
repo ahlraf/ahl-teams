@@ -43,14 +43,16 @@ To enable Microsoft OAuth, do the following:
 5. Select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description** and select one of the options for **Expires** and select **Add**.
 6. Copy the client secret value before you leave this page. You will need it in the next step.
 7.   Create a new file in the root of the project named `oauth_settings.yml`, and add the following content: 
-`app_id: "YOUR_APP_ID_HERE"`
-`app_secret: "YOUR_APP_SECRET_HERE"`
-`redirect: "http://localhost:8000/callback"`
-`scopes:`
-  `- user.read`
-  `- mailboxsettings.read`
-  `- calendars.readwrite`
-`authority: "https://login.microsoftonline.com/common"`
+```
+app_id: "YOUR_APP_ID_HERE"
+app_secret: "YOUR_APP_SECRET_HERE"`
+redirect: "http://localhost:8000/callback"`
+scopes:`
+  - user.read`
+  - mailboxsettings.read`
+  - calendars.readwrite`
+authority: "https://login.microsoftonline.com/common"
+```
 8. Replace `YOUR_APP_ID_HERE` with the application ID from the Application Registration Portal, and replace `YOUR_APP_SECRET_HERE` with the password you generated
 
 Now run `python manage.py runserver` from your CLI. The web app should be up and running successfully!
