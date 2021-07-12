@@ -18,7 +18,7 @@ Voice call, video call and chat features are implemented with WebRTC and PeerJS.
 ## How is this Agile?
 Each feature was planned and ordered by priority during the design phase, and assigned to its respective sprint backlog. Over the month of the mentorship, I've fit in all the pieces together, in spirit with Agile. 
 
-I spent exactly a week - with my mentors' encouragement - in the design phase. I came up with the product backlog, with a list of all the features I wanted to see (along with the adopt feature) and how they'd all fit together. Then I divided it all into three sprint backlogs, each a week each. 
+I spent exactly a week - with my mentors' encouragement - in the design phase. I came up with the product backlog, with a list of all the features I wanted to see (along with the adopt feature) and how they'd all fit together. Then I divided it all into three sprint backlogs, each a week long. 
 
 The first sprint I developed the two-person video call feature. The next sprint I worked on the Graph API features - authorization and calendar. Finally in the last sprint, as part of the adopt phase, I implemented the chat feature. I spent the final couple of days improving UI and focusing on deployment configuration. 
 
@@ -39,9 +39,9 @@ To enable Microsoft OAuth, do the following:
 -   Set  **Supported account types**  to  **Accounts in any organizational directory and personal Microsoft accounts**.
 -   Under  **Redirect URI**, set the first drop-down to  `Web`  and set the value to  `http://localhost:8000/callback`. This is to run the app locally. You can change this according to your deployment preferences.
 
-4. Select **Register**. On the **ahl-teams demo** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
+4. Select **Register**. On the **ahl-teams demo** page, copy the value of the **Application (client) ID** and save it. This will be needed in the next step.
 5. Select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description** and select one of the options for **Expires** and select **Add**.
-6. Copy the client secret value before you leave this page. You will need it in the next step.
+6. Copy the client secret value before leaving this page. This will be needed it in the next step.
 7.   Create a new file in the root of the project named `oauth_settings.yml`, and add the following content: 
 ```
 app_id: "YOUR_APP_ID_HERE"
@@ -53,7 +53,7 @@ scopes:`
   - calendars.readwrite`
 authority: "https://login.microsoftonline.com/common"
 ```
-8. Replace `YOUR_APP_ID_HERE` with the application ID from the Application Registration Portal, and replace `YOUR_APP_SECRET_HERE` with the password you generated
+8. Replace `YOUR_APP_ID_HERE` with the application ID from the Application Registration Portal, and replace `YOUR_APP_SECRET_HERE` with the password generated.
 
 Now run `python manage.py runserver` from your CLI. The web app should be up and running successfully!
 
