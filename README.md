@@ -70,6 +70,8 @@ Click on the user you'd like to talk to. This opens up a chat window. Send them 
 
 To video call or voice call them, click on the corresponding buttons at the top of the chat window. This takes you to a new screen and sends them an incoming call request. You can toggle video and audio on and off.
 
+Once you're done, you can sign out by clicking on the teams logo on the top right.
+
 Happy meets!
 
 <br><br><br>
