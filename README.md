@@ -72,6 +72,6 @@ To video call or voice call them, click on the corresponding buttons at the top 
 
 Happy meets!
 
+<br><br><br>
 
-
-** This is a cleaned repository. The original repository with all version commits is [here](https://github.com/ahlraf/teams-clone-v2)
+** *This is a cleaned repository. The original repository with all version commits is [here](https://github.com/ahlraf/teams-clone-v2)*
